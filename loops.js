@@ -14,19 +14,20 @@ function forLoop(array){
   function whileLoop(n){
    while (n > 0){
     console.log(--n);
-
 }
 return 'done';
 }
-var array = [];
+
+function maybeTrue() {
+  return Math.random() >= 0.5
+}
+
+
 function doWhileLoop(array){
-  function maybeTrue() {
-  return Math.random() >= 0.5}
+  do{ array.shift();
 
-  do { array.shift();
-  }
-  while (array.length > 0 && maybeTrue());
+  } while (array.length >= -1 && maybeTrue())
 
-
+return array;
 
 }
